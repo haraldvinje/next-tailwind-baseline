@@ -8,7 +8,7 @@ export default function Counter({ initialCount = 0 }: { initialCount?: number })
   const buttonStyle =
     'text-white font-bold w-12 py-2 px-4 rounded transition ease-in-out'
 
-  const resetButtonStyle = "rounded border border-blue-500 bg-transparent w-32 py-2 my-2 font-semibold text-blue-700 transition ease-in-out hover:border-transparent hover:bg-blue-500 hover:text-white"
+  const resetButtonStyle = " rounded border border-blue-500 bg-transparent w-32 py-2 my-2 font-semibold text-blue-700 transition ease-in-out hover:border-transparent hover:bg-blue-500 hover:text-white"
 
   return (
     <>
