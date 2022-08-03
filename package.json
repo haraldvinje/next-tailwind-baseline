@@ -1,6 +1,7 @@
 {
   "name": "next-tailwind-baseline",
   "version": "0.0.57",
+  "private": true,
   "scripts": {
     "styles:watch": "npx tailwindcss -i src/styles/globals.css -o src/styles/output.css --watch",
     "dev": "bun dev",
@@ -11,7 +12,7 @@
     "lint:fix": "npx eslint --fix 'src/**/*.{js,jsx,ts,tsx}'",
     "test:gui": "cypress open",
     "test": "cypress run && cypress run --component",
-    "prepare": "husky install"
+    "postinstall": "husky install"
   },
   "dependencies": {
     "next": "12.1.3",
