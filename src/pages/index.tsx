@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Metatags title="Next Baseline" />
       <main className="mb-4 text-4xl">Hello World</main>
-      <Counter />
+      <Counter initialCount={42} />
     </>
   )
 }
