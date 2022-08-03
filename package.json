@@ -9,7 +9,7 @@
     "clean": "rm -rf node_modules",
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
     "lint": "npx eslint 'src/**/*.{js,jsx,ts,tsx}'",
-    "lint:fix": "npx eslint --fix 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "npx eslint --fix --cache 'src/**/*.{js,jsx,ts,tsx}'",
     "test:gui": "cypress open",
     "test": "cypress run && cypress run --component",
     "postinstall": "husky install"
@@ -42,7 +42,7 @@
   },
   "module": "index.js",
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.{js,jsx,ts,tsx}": "prettier --write"
+    "*.js": "bun lint:fix",
+    "*.{js,jsx,ts,tsx}": "bun format"
   }
 }
