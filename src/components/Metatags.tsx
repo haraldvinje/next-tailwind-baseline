@@ -12,7 +12,7 @@ const Metatags = ({
   return (
     <Head>
       <title>{title}</title>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" data-lo="haha" href="/favicon.ico" />
 
       <meta name="twitter:card" content="summary"></meta>
       <meta name="twitter:title" content={title}></meta>
