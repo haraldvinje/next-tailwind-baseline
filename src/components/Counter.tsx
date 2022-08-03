@@ -17,7 +17,6 @@ export default function Counter({
 
   return (
     <>
-      <p className="text-2xl">Counter</p>
       <div className="my-4 flex w-32 justify-between">
         <button
           aria-label="decrement"

@@ -6,8 +6,10 @@ export default function Home() {
   return (
     <>
       <Metatags title="Next Baseline" />
-      <main className="mb-4 text-4xl">Hello World</main>
-      <Counter initialCount={42} />
+      <div className='flex flex-col items-center'>
+        <p className="text-4xl" data-cy="welcome">Welcome</p>
+        <Counter initialCount={42} />
+      </div>
     </>
   )
 }
