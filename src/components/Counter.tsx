@@ -33,7 +33,7 @@ export default function Counter({
           className={`${buttonStyle} bg-green-400 hover:bg-green-500`}
           onClick={increment}
         >
-          ++
+          +
         </button>
       </div>
       <button
