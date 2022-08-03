@@ -8,7 +8,7 @@ To install and prepare repo:
 
 ```bash
 bun install
-bun prepare # Init husky for autoformat pre-commit hook
+bun bun
 ```
 
 To run dev server:

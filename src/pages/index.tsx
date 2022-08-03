@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Metatags title="Next Baseline" />
       <div className="flex flex-col items-center">
-        <p className="text-4xl" data-cy="welcome">
+        <p data-cy="welcome" className="text-4xl">
           Welcome
         </p>
         <Counter initialCount={42} />
