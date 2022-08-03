@@ -7,9 +7,9 @@
     "dev": "bun dev",
     "dev:styles": "bun dev & bun run styles:watch",
     "clean": "rm -rf node_modules",
-    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
-    "lint": "npx eslint 'src/**/*.{js,jsx,ts,tsx}'",
-    "lint:fix": "npx eslint --fix --cache 'src/**/*.{js,jsx,ts,tsx}'",
+    "format": "prettier --write",
+    "lint": "npx eslint",
+    "lint:fix": "npx eslint --fix --cache",
     "test:gui": "cypress open",
     "test": "cypress run && cypress run --component",
     "postinstall": "husky install"
