@@ -7,12 +7,13 @@
     "dev": "bun dev",
     "dev:styles": "bun dev & bun run styles:watch",
     "clean": "rm -rf node_modules",
-    "format": "prettier --write",
-    "lint": "npx eslint",
-    "lint:fix": "npx eslint --fix --cache",
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint": "npx eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "npx eslint --fix 'src/**/*.{js,jsx,ts,tsx}'",
     "test:gui": "cypress open",
     "test": "cypress run && cypress run --component",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "12.1.3",
@@ -42,7 +43,7 @@
   },
   "module": "index.js",
   "lint-staged": {
-    "*.js": "bun lint:fix",
-    "*.{js,jsx,ts,tsx}": "bun format"
+    "*.js": "eslint --cache --fix",
+    "*.{js,jsx,ts,tsx}": "prettier --write"
   }
 }
