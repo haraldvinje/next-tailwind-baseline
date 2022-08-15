@@ -19,6 +19,6 @@ bun dev:styles
 
 ## Learn
 
-* [Next.js](https://nextjs.org/)
-* [TailwindCSS](https://tailwindcss.com/)
-* [Bun](https://bun.sh/)
+- [Next.js](https://nextjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Bun](https://bun.sh/)

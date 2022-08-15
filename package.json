@@ -6,9 +6,10 @@
     "styles:watch": "npx tailwindcss -i src/styles/globals.css -o src/styles/output.css --watch",
     "dev:styles": "bun dev & bun run styles:watch",
     "clean": "rm -rf node_modules .next node_modules.bun node_modules.server.bun",
-    "format": "prettier --write",
+    "format": "prettier --write .",
     "lint": "npx eslint",
     "lint:fix": "npx eslint --fix --cache",
+    "format:lint": "bun format && bun lint:fix",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -38,6 +39,6 @@
   },
   "module": "index.js",
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "bun format && bun lint:fix"
+    "*.{js,jsx,ts,tsx}": "bun format:lint"
   }
 }
