@@ -9,9 +9,6 @@
     "format": "prettier --write",
     "lint": "npx eslint",
     "lint:fix": "npx eslint --fix --cache",
-    "test:gui": "cypress open",
-    "test": "cypress run --component",
-    "test:full": "cypress run && cypress run --component",
     "postinstall": "husky install"
   },
   "dependencies": {
@@ -25,7 +22,6 @@
     "autoprefixer": "^10.4.8",
     "bun-framework-next": "^12.2.3",
     "bun-livereload": "^1.0.3",
-    "cypress": "^10.4.0",
     "eslint": "^8.21.0",
     "eslint-config-next": "^12.2.3",
     "eslint-config-prettier": "^8.5.0",
